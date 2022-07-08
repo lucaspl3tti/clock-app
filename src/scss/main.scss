@@ -1,0 +1,22 @@
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// import scss color variables
+@import 'abstracts/variables/colors';
+
+// import vendor files
+@import "vendor/bootstrap/custom";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// import scss variables and mixins
+@import 'abstracts/variables/typography';
+@import 'abstracts/variables/general';
+@import 'abstracts/mixins/mixins';
+
+// import base styling
+@import 'base/reset';
+@import 'base/print';
+@import 'base/general';
+
+// import component styling
+@import 'components/button';

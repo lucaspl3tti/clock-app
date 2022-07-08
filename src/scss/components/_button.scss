@@ -1,0 +1,13 @@
+/** button component styling */
+.btn-primary {
+    padding: 12px 30px;
+
+    .icon-fa {
+        margin-right: 5px;
+    }
+
+    &:hover {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+    }
+}

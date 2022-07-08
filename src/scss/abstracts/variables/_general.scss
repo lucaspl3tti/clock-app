@@ -1,0 +1,23 @@
+// animation
+$animation-speed: .33s;
+
+// z-index variables
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-model: 1000;
+
+// media querie breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 2400px;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 2400px
+);

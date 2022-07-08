@@ -1,0 +1,96 @@
+/** general styling */
+body {
+    margin: 0;
+    background-color: $color-body;
+    font-family: $font-body;
+    font-size: $font-size-normal-mobile;
+    color: $color-text;
+}
+
+#app {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+
+    .btn-wrapper {
+        width: 200px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: $color-text;
+    font-weight: $font-weight-bold;
+}
+
+h1 {
+    font-size: $font-size-h1-mobile;
+}
+
+h2 {
+    font-size: $font-size-h2-mobile;
+}
+
+h3 {
+    font-size: $font-size-h3-mobile;
+}
+
+h4 {
+    font-size: $font-size-h4-mobile;
+}
+
+h5 {
+    font-size: $font-size-h5-mobile;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-secondary;
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@include media-breakpoint-up(lg) {
+    body {
+        font-size: $font-size-normal;
+    }
+
+    h1 {
+        font-size: $font-size-h1;
+    }
+
+    h2 {
+        font-size: $font-size-h2;
+    }
+
+    h3 {
+        font-size: $font-size-h3;
+    }
+
+    h4 {
+        font-size: $font-size-h4;
+    }
+
+    h5 {
+        font-size: $font-size-h5;
+    }
+}

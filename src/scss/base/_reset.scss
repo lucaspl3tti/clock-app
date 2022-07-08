@@ -1,0 +1,100 @@
+// ### css resets ###
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+// html5 display definitions
+// corrects block display not defined in IE6/7/8/9 & FF3
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+main {
+    display: block;
+}
+
+// corrects inline-block display not defined in IE6/7/8/9 & FF3
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+// addresses margins handled incorrectly in IE6/7
+body {
+    margin: 0;
+}
+
+// remove list item style
+ul {
+    list-style-type: none;
+}
+
+// remove the gray background color from active links in IE 10.
+a {
+    background: transparent;
+    text-decoration: none;
+}
+
+// addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+button,
+input {
+    line-height: normal; // 1
+}
+
+// 1. addresses appearance set to searchfield in Safari 5, Chrome
+input[type="search"] {
+    -webkit-appearance: textfield; // 1
+}
+
+// removes inner padding and search cancel button in S5, Chrome on OS X
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+// removes inner padding and border in FF3+
+// www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+// 1. removes default vertical scrollbar in IE6/7/8/9
+// 2. improves readability and alignment in all browsers
+textarea {
+    overflow: auto; // 1
+    vertical-align: top; // 2
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+textarea:focus,
+input:focus {
+    outline: 0;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    appearance: none;
+}

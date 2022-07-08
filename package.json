@@ -1,0 +1,29 @@
+{
+  "name": "basic-frontend-ide",
+  "description": "A basic test and development environment for my frontend projects based on vite",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:scss": "sass-lint -v -q",
+    "lint:js": "eslint --ext .js src/script/"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "sass",
+    "scss",
+    "html5"
+  ],
+  "devDependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "sass": "^1.53.0",
+    "sass-lint": "^1.13.1",
+    "vite": "^2.9.9"
+  }
+}
