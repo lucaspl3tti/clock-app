@@ -1,0 +1,98 @@
+#moreInformation {
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    .sidebar-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        background-color: rgba($color: $color-white, $alpha: .75);
+        padding: 48px 25px;
+        transform: translateY(300px);
+        transition: transform $animation-speed;
+
+        &.sidebar--is-open {
+            transform: translateY(0);
+        }
+    }
+
+    .sidebar__item {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sidebar__heading {
+        font-size: 10px;
+        line-height: 28px;
+        letter-spacing: 2px;
+    }
+}
+
+.app--night {
+    #moreInformation {
+        .sidebar-content {
+            background-color: rgba($color: $color-black, $alpha: .75);
+            color: $color-white;
+        }
+
+        .sidebar__copy {
+            color: $color-white;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    #moreInformation {
+        .sidebar-content {
+            flex-flow: row wrap;
+            padding: 115px 132px 115px 65px;
+            transform: translateY(600px);
+        }
+
+        .sidebar__item {
+            flex-flow: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            &.current-timezone {
+                order: 1;
+                flex: 0 0 60%;
+                max-width: 60%;
+            }
+
+            &.year-day {
+                order: 3;
+                flex: 0 0 60%;
+                max-width: 60%;
+            }
+
+            &.week-day {
+                order: 2;
+                flex: 28.83%;
+                max-width: 28.83%;
+            }
+
+            &.week-number {
+                order: 4;
+                flex: 28.83%;
+                max-width: 28.83%;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    #moreInformation {
+        .sidebar-content {
+            height: 50vh;
+            transform: translateY(55vh);
+        }
+    }
+}

@@ -1,13 +1,16 @@
-// body colors
-$color-body: #fff;
-$color-body-dark: #000;
+// main colors
+$color-black: #000;
+$color-white: #fff;
+$color-gray-100: #999999;
+$color-gray-300: #303030;
+
+$color-body: $color-white;
+$color-body-dark: $color-black;
 
 // text colors
-$color-text: $color-body-dark;
-$color-text-light: $color-body;
+$color-text: $color-black;
+$color-text-light: $color-white;
 
 // primary and secondary color
-$color-primary: rgba(39, 24, 126, 1);
-$color-secondary: rgba(255, 134, 0, 1);
-
-// define your other color variables here
+$color-primary: $color-white;
+$color-secondary: $color-gray-100;

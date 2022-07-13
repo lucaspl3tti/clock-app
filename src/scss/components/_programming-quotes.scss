@@ -1,0 +1,37 @@
+.programmer-quote {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    color: $color-white;
+
+    .quote__author {
+        font-weight: $font-weight-bold;
+    }
+
+    .quote-refresh {
+        .icon {
+            cursor: pointer;
+
+            & > svg {
+                path {
+                    opacity: .5;
+                    transition: opacity $animation-speed;
+                }
+            }
+
+            &:hover {
+                & > svg {
+                    path {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .programmer-quote {
+        width: 50%;
+    }
+}

@@ -5,20 +5,7 @@ body {
     font-family: $font-body;
     font-size: $font-size-normal-mobile;
     color: $color-text;
-}
-
-#app {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-
-    .btn-wrapper {
-        width: 200px;
-    }
+    line-height: 22px;
 }
 
 h1,
@@ -27,11 +14,23 @@ h3,
 h4,
 h5 {
     color: $color-text;
+}
+
+h1,
+h2,
+h3,
+h5 {
     font-weight: $font-weight-bold;
+}
+
+h4 {
+    font-weight: $font-weight-normal;
 }
 
 h1 {
     font-size: $font-size-h1-mobile;
+    line-height: 100px;
+    letter-spacing: -2.5px;
 }
 
 h2 {
@@ -40,14 +39,21 @@ h2 {
 
 h3 {
     font-size: $font-size-h3-mobile;
+    line-height: 24px;
+    letter-spacing: -2.4px;
+    text-transform: uppercase;
 }
 
 h4 {
     font-size: $font-size-h4-mobile;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 h5 {
     font-size: $font-size-h5-mobile;
+    line-height: 26px;
 }
 
 ul {
@@ -69,28 +75,144 @@ img {
     height: auto;
 }
 
-@include media-breakpoint-up(lg) {
+#app {
+    height: 100vh;
+    width: 100vw;
+
+    .btn-wrapper {
+        width: 160px;
+    }
+
+    .image-wrapper {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .image {
+        display: none;
+
+        img {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+
+    .image-layer {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-color: $color-black;
+        opacity: .3;
+    }
+
+    .content-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #main {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        width: 100vw;
+        padding: 40px 25px;
+        transform: translateY(0);
+        transition: transform $animation-speed;
+
+        &.main--more-information-is-open {
+            transform: translateY(-35%);
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
     body {
         font-size: $font-size-normal;
+        line-height: 28px;
     }
 
     h1 {
+        font-size: 175px;
+        line-height: 175px;
+        letter-spacing: -4.38px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 18px;
+        letter-spacing: 3.6px;
+    }
+
+    #app {
+        #main {
+            padding: 80px 132px 65px 65px;
+
+            &.main--more-information-is-open {
+                transform: translateY(-35%);
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    h1 {
         font-size: $font-size-h1;
+        line-height: 200px;
+        letter-spacing: -5px;
     }
 
     h2 {
         font-size: $font-size-h2;
+        line-height: 68px;
     }
 
     h3 {
         font-size: $font-size-h3;
+        line-height: 28px;
+        letter-spacing: -4.8px;
     }
 
     h4 {
         font-size: $font-size-h4;
+        line-height: 28px;
+        letter-spacing: 4px;
     }
 
     h5 {
         font-size: $font-size-h5;
+        line-height: 28px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    #app {
+        #main {
+            padding: 55px 165px 100px;
+
+            &.main--more-information-is-open {
+                transform: translateY(-45%);
+            }
+        }
+    }
+}
+
+// custom media querie for resolutions higher than FHD
+@media (min-width: 2560px) {
+    #app {
+        #main {
+            &.main--more-information-is-open {
+                transform: translateY(-50%);
+            }
+        }
     }
 }

@@ -1,8 +1,12 @@
 // import scss files
-import './../scss/main.scss'
+import '../scss/main.scss';
 
 // import js plugins
-import demoPlugin from './plugins/demo.plugin'
+import GetTimezonePlugin from './plugins/get-timezone.plugin';
+import ProgrammingQuotesPlugin from './plugins/programming-quotes.plugin';
+import GetLocationPlugin from './plugins/get-location.plugin';
 
 // register js plugins
-const demo = new demoPlugin('#app')
+const getTimezone = new GetTimezonePlugin('#app');
+const programmingQuotes = new ProgrammingQuotesPlugin('#programmingQuote');
+const getLocation = new GetLocationPlugin('#app');

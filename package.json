@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint:scss": "sass-lint -v -q",
-    "lint:js": "eslint --ext .js src/script/"
+    "lint:js": "eslint --ext .js src/js/"
   },
   "keywords": [
     "javascript",

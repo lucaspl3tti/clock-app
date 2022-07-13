@@ -1,13 +1,45 @@
 /** button component styling */
-.btn-primary {
-    padding: 12px 30px;
+.btn {
+    &-primary {
+        width: 100%;
+        border-radius: 28px;
+        background-color: $color-white;
+        padding: 10px 10px 10px 20px;
+        color: $color-black;
 
-    .icon-fa {
-        margin-right: 5px;
-    }
+        .btn__text {
+            font-size: 16px;
+            font-weight: $font-weight-bold;
+            line-height: 28px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            opacity: 0.5;
+            margin-right: 12px;
+        }
 
-    &:hover {
-        background-color: $color-secondary;
-        border-color: $color-secondary;
+        .btn__icon {
+            padding: 10.5px 13px 10px 13px;
+            border-radius: 50%;
+            background-color: $color-gray-300;
+            color: $color-white;
+            transition: background-color $animation-speed;
+        }
+
+        .icon-fa {
+            transform: rotate(0);
+            transition: transform $animation-speed;
+        }
+
+        &:hover {
+            .btn__icon {
+                background-color: $color-gray-100;
+            }
+        }
+
+        &--active {
+            .icon-fa {
+                transform: rotate(180deg);
+            }
+        }
     }
 }
