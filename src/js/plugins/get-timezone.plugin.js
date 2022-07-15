@@ -46,7 +46,7 @@ export default class GetTimezonePlugin {
     }
 
     fetchTimezone() {
-        fetch('http://worldtimeapi.org/api/ip')
+        fetch('https://worldtimeapi.org/api/ip')
             .then((response) => {
                 if (!response.ok) return alert('Timezone could not get fetched');
 
