@@ -1,17 +1,60 @@
-# Basic Frontend IDE 2022
-My current personal frontend test and development environment. It is based on Vite.
+# Frontend Mentor - Clock app solution
 
-## Tech Stack
-- JavaScript / TypeScript
-- ES6+
-- SASS / SCSS
-- Bootstrap 5.2 (Beta)
+This is a solution to the [Clock app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/clock-app-LMFaxFwrM). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Installation Instructions
-1. Initialize a new repo from the [template repo](https://github.com/lucaspl3tti/basic-frontend-ide-2022)
-2. Clone the new created repo with `git clone git@github.com:lucaspl3tti/<Repo Path>.git` to your desktop
-   * use `git clone https://github.com/lucaspl3tti/<Repo Path>.git` if you aren't using git with ssh
-3. Run an installation of the package dependencies using `npm i`
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+- [Commands](#commands)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View the current time and location information based on their IP address
+- View additional information about the date and time in the expanded state
+- Be shown the correct greeting and background image based on the time of day they're visiting the site
+- Generate random programming quotes by clicking the refresh icon near the quote
+
+### Screenshot
+
+![](./screenshot.png)
+
+### Links
+
+- Solution URL: [Solution](https://your-solution-url.com)
+- Live Site URL: [Live Site](https://jls-clock-app.netlify.app)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- SCSS
+- Vanilla JavaScript
+- JavaScript Fetch API
+- Vite
+
+### What I learned
+
+How to work with external APIs with the use of JavaScript Fetch.
+
+## Author
+
+- Website - [Jan-Luca Splettstößer](https://www.spletti.info)
+- Frontend Mentor - [@lucaspl3tti](https://www.frontendmentor.io/profile/lucaspl3tti)
+- Github - [@lucaspl3tti](https://github.com/lucaspl3tti)
 
 ## Commands
 `npm run dev` run this command to initialize a dev server with hot module replacement
@@ -23,8 +66,3 @@ My current personal frontend test and development environment. It is based on Vi
 `npm run lint:scss` run this command to lint over all scss files
 
 `npm run lint:js` run this command to lint over all js files
-
-## TypeScript
-To use TypeScript you simply need to change your JavaScript files into TypeScript files and then also adjust source link for the "main.js/ts" file in the html code. Vite then automatically compiles it.
-
-ATTENTION: Vite doesn't do type checking. This is cause it is assuming that this is already done by your IDE Program (like Visual Studio Code e.g.) and your build process. So keep that in mind.
