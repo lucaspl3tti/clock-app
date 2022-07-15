@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/clock-app-using-javascript-fetch-api-Jzwy0WVaWN)
 - Live Site URL: [Live Site](https://jls-clock-app.netlify.app)
 
 ## My process
